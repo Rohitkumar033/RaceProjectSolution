@@ -6,6 +6,13 @@ using System.Windows.Forms;
 
 namespace RaceProject
 {
+    abstract class GameGuys
+    {
+        public virtual int findGet()
+        {
+            return 0;
+        }
+    }
     public class Guy
     {
         private string _name;
