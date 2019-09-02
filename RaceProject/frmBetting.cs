@@ -112,7 +112,7 @@ namespace RaceProject
             try
             {
                 if (numBucks.Value == 5)
-                    lblMinimumBet.Text = "Minimum limit : 5 Dollar";
+                    lblMinimumBet.Text = "Minimum limit : 1 Dollar";
 
                 FillArrays();
                 
@@ -130,6 +130,7 @@ namespace RaceProject
             if (rdbGuy1.Checked)
             {
                 this._flag = 1;
+
                 lblGuyName.Text = this._listOfGuys[0].Name;
             }
         }
@@ -265,6 +266,11 @@ namespace RaceProject
         }
 
         private void PbDog3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NumBucks_ValueChanged(object sender, EventArgs e)
         {
 
         }

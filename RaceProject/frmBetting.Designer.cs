@@ -79,9 +79,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(11, 324);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(724, 244);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -138,7 +138,7 @@
             this.btnRace.Icon = null;
             this.btnRace.IsAnimated = true;
             this.btnRace.Location = new System.Drawing.Point(581, 190);
-            this.btnRace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRace.Margin = new System.Windows.Forms.Padding(4);
             this.btnRace.MaximumGlowOpacity = 0.8D;
             this.btnRace.Name = "btnRace";
             this.btnRace.NormalColors_1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
@@ -157,7 +157,7 @@
             // 
             this.numDogNo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numDogNo.Location = new System.Drawing.Point(472, 201);
-            this.numDogNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numDogNo.Margin = new System.Windows.Forms.Padding(4);
             this.numDogNo.Maximum = new decimal(new int[] {
             4,
             0,
@@ -195,7 +195,7 @@
             this.btnBets.Icon = null;
             this.btnBets.IsAnimated = true;
             this.btnBets.Location = new System.Drawing.Point(61, 199);
-            this.btnBets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBets.Margin = new System.Windows.Forms.Padding(4);
             this.btnBets.MaximumGlowOpacity = 0.8D;
             this.btnBets.Name = "btnBets";
             this.btnBets.NormalColors_1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
@@ -247,9 +247,14 @@
             // 
             this.numBucks.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numBucks.Location = new System.Drawing.Point(175, 201);
-            this.numBucks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numBucks.Margin = new System.Windows.Forms.Padding(4);
+            this.numBucks.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numBucks.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
@@ -257,10 +262,11 @@
             this.numBucks.Size = new System.Drawing.Size(84, 32);
             this.numBucks.TabIndex = 1;
             this.numBucks.Value = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
+            this.numBucks.ValueChanged += new System.EventHandler(this.NumBucks_ValueChanged);
             // 
             // lblMinimumBet
             // 
@@ -278,7 +284,7 @@
             this.rdbGuy3.AutoSize = true;
             this.rdbGuy3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbGuy3.Location = new System.Drawing.Point(12, 108);
-            this.rdbGuy3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbGuy3.Margin = new System.Windows.Forms.Padding(4);
             this.rdbGuy3.Name = "rdbGuy3";
             this.rdbGuy3.Size = new System.Drawing.Size(63, 28);
             this.rdbGuy3.TabIndex = 6;
@@ -292,7 +298,7 @@
             this.rdbGuy2.AutoSize = true;
             this.rdbGuy2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbGuy2.Location = new System.Drawing.Point(12, 81);
-            this.rdbGuy2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbGuy2.Margin = new System.Windows.Forms.Padding(4);
             this.rdbGuy2.Name = "rdbGuy2";
             this.rdbGuy2.Size = new System.Drawing.Size(74, 28);
             this.rdbGuy2.TabIndex = 10;
@@ -306,7 +312,7 @@
             this.rdbGuy1.AutoSize = true;
             this.rdbGuy1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbGuy1.Location = new System.Drawing.Point(12, 54);
-            this.rdbGuy1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbGuy1.Margin = new System.Windows.Forms.Padding(4);
             this.rdbGuy1.Name = "rdbGuy1";
             this.rdbGuy1.Size = new System.Drawing.Size(73, 28);
             this.rdbGuy1.TabIndex = 4;
@@ -320,7 +326,7 @@
             this.pBoxRaceTrack.BackgroundImage = global::RaceProject.Properties.Resources.bg;
             this.pBoxRaceTrack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pBoxRaceTrack.Location = new System.Drawing.Point(9, 15);
-            this.pBoxRaceTrack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pBoxRaceTrack.Margin = new System.Windows.Forms.Padding(4);
             this.pBoxRaceTrack.Name = "pBoxRaceTrack";
             this.pBoxRaceTrack.Size = new System.Drawing.Size(725, 309);
             this.pBoxRaceTrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -334,7 +340,7 @@
             this.pbDog1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbDog1.ErrorImage = null;
             this.pbDog1.Location = new System.Drawing.Point(28, 32);
-            this.pbDog1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbDog1.Margin = new System.Windows.Forms.Padding(4);
             this.pbDog1.Name = "pbDog1";
             this.pbDog1.Size = new System.Drawing.Size(100, 31);
             this.pbDog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -348,7 +354,7 @@
             this.pbDog4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbDog4.ErrorImage = null;
             this.pbDog4.Location = new System.Drawing.Point(25, 274);
-            this.pbDog4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbDog4.Margin = new System.Windows.Forms.Padding(4);
             this.pbDog4.Name = "pbDog4";
             this.pbDog4.Size = new System.Drawing.Size(100, 31);
             this.pbDog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -362,7 +368,7 @@
             this.pbDog3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbDog3.ErrorImage = null;
             this.pbDog3.Location = new System.Drawing.Point(25, 196);
-            this.pbDog3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbDog3.Margin = new System.Windows.Forms.Padding(4);
             this.pbDog3.Name = "pbDog3";
             this.pbDog3.Size = new System.Drawing.Size(100, 31);
             this.pbDog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -377,7 +383,7 @@
             this.pbDog2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbDog2.ErrorImage = null;
             this.pbDog2.Location = new System.Drawing.Point(25, 107);
-            this.pbDog2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbDog2.Margin = new System.Windows.Forms.Padding(4);
             this.pbDog2.Name = "pbDog2";
             this.pbDog2.Size = new System.Drawing.Size(100, 31);
             this.pbDog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -398,7 +404,7 @@
             this.Controls.Add(this.pBoxRaceTrack);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmBetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
