@@ -14,7 +14,7 @@ namespace RaceProject
             get { return _amount; }
             set { _amount = value; }
         }
-
+        // coding for dog number//
         private int _dogNumber;
 
         public int DogNumber
@@ -38,6 +38,7 @@ namespace RaceProject
             else // else return what he placed and on what dog
                 return this._bettor.Name + " placed $ " + this._bettor.MyBet._amount.ToString() + " on dog # " + this._bettor.MyBet.DogNumber.ToString();
         }
+        // winning coding of dogs//
 
         public int Payout(int winningDogNo)
         {

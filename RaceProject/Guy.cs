@@ -8,6 +8,8 @@ namespace RaceProject
 {
     abstract class GameGuys
     {
+        // abstract class that is used to indicate the function without working so those that can be accessed from further class by using the concept the
+        // inheritance of single level inheritance//
         public virtual int findGet()
         {
             return 0;
@@ -30,6 +32,7 @@ namespace RaceProject
             get { return _cash; }
             set { _cash = value; }
         }
+        // return the position of the dogs//
 
         private Bet _myBet;
 
@@ -54,7 +57,7 @@ namespace RaceProject
             get { return _myLabel; }
             set { _myLabel = value; }
         }
-
+        // this coding is used for indicate the dollars acctually they have//
         public void UpdateLabels()
         {
             this._myRadioButton.Text = this._name + " has " + this._cash.ToString() + " dollars";

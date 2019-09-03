@@ -124,6 +124,7 @@ namespace RaceProject
                 MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+        // coding for race of dogs finish flags//
 
         private void rdbGuy1_CheckedChanged(object sender, EventArgs e)
         {
