@@ -332,6 +332,7 @@
             this.pBoxRaceTrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxRaceTrack.TabIndex = 18;
             this.pBoxRaceTrack.TabStop = false;
+            this.pBoxRaceTrack.Click += new System.EventHandler(this.PBoxRaceTrack_Click);
             // 
             // pbDog1
             // 
@@ -353,7 +354,7 @@
             this.pbDog4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbDog4.BackgroundImage")));
             this.pbDog4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbDog4.ErrorImage = null;
-            this.pbDog4.Location = new System.Drawing.Point(25, 274);
+            this.pbDog4.Location = new System.Drawing.Point(27, 229);
             this.pbDog4.Margin = new System.Windows.Forms.Padding(4);
             this.pbDog4.Name = "pbDog4";
             this.pbDog4.Size = new System.Drawing.Size(100, 31);
@@ -367,7 +368,7 @@
             this.pbDog3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbDog3.BackgroundImage")));
             this.pbDog3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbDog3.ErrorImage = null;
-            this.pbDog3.Location = new System.Drawing.Point(25, 196);
+            this.pbDog3.Location = new System.Drawing.Point(27, 167);
             this.pbDog3.Margin = new System.Windows.Forms.Padding(4);
             this.pbDog3.Name = "pbDog3";
             this.pbDog3.Size = new System.Drawing.Size(100, 31);
