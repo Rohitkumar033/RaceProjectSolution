@@ -11,6 +11,7 @@ namespace RaceProject.Tests
     [TestClass()]
     public class GreyHoundTests
     {
+        // run test method //
         [TestMethod()]
         public void RunTest()
         {

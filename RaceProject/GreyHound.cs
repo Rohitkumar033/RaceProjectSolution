@@ -18,7 +18,7 @@ namespace RaceProject
         }
 
         private int _raceTrackLength;
-
+        // this is used to create the race track of the project//
         public int RaceTrackLength
         {
             get { return _raceTrackLength; }
@@ -48,7 +48,7 @@ namespace RaceProject
             get { return _myRandom; }
             set { _myRandom = value; }
         }
-       
+       // codding public bool//
         public bool Run()
         {
             int randomDistance = this._myRandom.Next(1, 4);

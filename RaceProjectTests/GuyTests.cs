@@ -11,6 +11,7 @@ namespace RaceProject.Tests
     [TestClass()]
     public class GuyTests
     {
+        // clear betting test codding//
         [TestMethod()]
         public void ClearBetTest()
         {

@@ -16,6 +16,7 @@ namespace RaceProject
         {
             InitializeComponent();
         }
+        // codding for structure of the project//
 
         private Guy []_listOfGuys = null;
         private GreyHound []_listOfDogs = null;
