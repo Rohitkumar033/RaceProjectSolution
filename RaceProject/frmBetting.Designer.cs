@@ -33,9 +33,7 @@
             this.lblGuy3 = new System.Windows.Forms.Label();
             this.lblGuy2 = new System.Windows.Forms.Label();
             this.lblGuy1 = new System.Windows.Forms.Label();
-            this.btnRace = new CloudToolkitN6.Windows.Vista.CloudStartMenuButton();
             this.numDogNo = new System.Windows.Forms.NumericUpDown();
-            this.btnBets = new CloudToolkitN6.Windows.Vista.CloudStartMenuButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblGuyName = new System.Windows.Forms.Label();
@@ -49,6 +47,8 @@
             this.pbDog4 = new System.Windows.Forms.PictureBox();
             this.pbDog3 = new System.Windows.Forms.PictureBox();
             this.pbDog2 = new System.Windows.Forms.PictureBox();
+            this.btnBets = new System.Windows.Forms.Button();
+            this.btnRace = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDogNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBucks)).BeginInit();
@@ -62,12 +62,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btnRace);
+            this.groupBox1.Controls.Add(this.btnBets);
             this.groupBox1.Controls.Add(this.lblGuy3);
             this.groupBox1.Controls.Add(this.lblGuy2);
             this.groupBox1.Controls.Add(this.lblGuy1);
-            this.groupBox1.Controls.Add(this.btnRace);
             this.groupBox1.Controls.Add(this.numDogNo);
-            this.groupBox1.Controls.Add(this.btnBets);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblGuyName);
@@ -120,39 +120,6 @@
             this.lblGuy1.TabIndex = 15;
             this.lblGuy1.Text = "Minimum Bet Length";
             // 
-            // btnRace
-            // 
-            this.btnRace.AnimationOpacityChange = 0.1D;
-            this.btnRace.BackColor = System.Drawing.Color.Transparent;
-            this.btnRace.ButtonText = "Race!";
-            this.btnRace.ClickedColors_1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.btnRace.ClickedColors_2 = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.btnRace.ClickedColors_3 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.btnRace.ClickedColors_4 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnRace.ControlOpacity = 255;
-            this.btnRace.CornerRadius = 8;
-            this.btnRace.DrawHoverOverIcon = false;
-            this.btnRace.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRace.ForeColor = System.Drawing.Color.White;
-            this.btnRace.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(215)))), ((int)(((byte)(226)))));
-            this.btnRace.Icon = null;
-            this.btnRace.IsAnimated = true;
-            this.btnRace.Location = new System.Drawing.Point(581, 190);
-            this.btnRace.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRace.MaximumGlowOpacity = 0.8D;
-            this.btnRace.Name = "btnRace";
-            this.btnRace.NormalColors_1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.btnRace.NormalColors_2 = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.btnRace.NormalColors_3 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.btnRace.NormalColors_4 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnRace.Size = new System.Drawing.Size(129, 44);
-            this.btnRace.StartMenuIndex = 0;
-            this.btnRace.TabIndex = 14;
-            this.btnRace.TextCentered = true;
-            this.btnRace.TextDistanceFromBorder = 5;
-            this.btnRace.TextIconRelation = CloudToolkitN6.Windows.Vista.CloudStartMenuButton.TextIconRelation_Enum.TextOverIcon;
-            this.btnRace.Click += new System.EventHandler(this.btnRace_Click);
-            // 
             // numDogNo
             // 
             this.numDogNo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,39 +143,6 @@
             0,
             0,
             0});
-            // 
-            // btnBets
-            // 
-            this.btnBets.AnimationOpacityChange = 0.1D;
-            this.btnBets.BackColor = System.Drawing.Color.Transparent;
-            this.btnBets.ButtonText = "Bets";
-            this.btnBets.ClickedColors_1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.btnBets.ClickedColors_2 = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.btnBets.ClickedColors_3 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.btnBets.ClickedColors_4 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btnBets.ControlOpacity = 255;
-            this.btnBets.CornerRadius = 8;
-            this.btnBets.DrawHoverOverIcon = false;
-            this.btnBets.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBets.ForeColor = System.Drawing.Color.White;
-            this.btnBets.GlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(215)))), ((int)(((byte)(226)))));
-            this.btnBets.Icon = null;
-            this.btnBets.IsAnimated = true;
-            this.btnBets.Location = new System.Drawing.Point(61, 199);
-            this.btnBets.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBets.MaximumGlowOpacity = 0.8D;
-            this.btnBets.Name = "btnBets";
-            this.btnBets.NormalColors_1 = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.btnBets.NormalColors_2 = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
-            this.btnBets.NormalColors_3 = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.btnBets.NormalColors_4 = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.btnBets.Size = new System.Drawing.Size(104, 37);
-            this.btnBets.StartMenuIndex = 0;
-            this.btnBets.TabIndex = 12;
-            this.btnBets.TextCentered = true;
-            this.btnBets.TextDistanceFromBorder = 5;
-            this.btnBets.TextIconRelation = CloudToolkitN6.Windows.Vista.CloudStartMenuButton.TextIconRelation_Enum.TextOverIcon;
-            this.btnBets.Click += new System.EventHandler(this.btnBets_Click);
             // 
             // label3
             // 
@@ -266,7 +200,6 @@
             0,
             0,
             0});
-            this.numBucks.ValueChanged += new System.EventHandler(this.NumBucks_ValueChanged);
             // 
             // lblMinimumBet
             // 
@@ -332,7 +265,6 @@
             this.pBoxRaceTrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxRaceTrack.TabIndex = 18;
             this.pBoxRaceTrack.TabStop = false;
-            this.pBoxRaceTrack.Click += new System.EventHandler(this.PBoxRaceTrack_Click);
             // 
             // pbDog1
             // 
@@ -375,7 +307,6 @@
             this.pbDog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDog3.TabIndex = 20;
             this.pbDog3.TabStop = false;
-            this.pbDog3.Click += new System.EventHandler(this.PbDog3_Click);
             // 
             // pbDog2
             // 
@@ -390,6 +321,31 @@
             this.pbDog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDog2.TabIndex = 19;
             this.pbDog2.TabStop = false;
+            // 
+            // btnBets
+            // 
+            this.btnBets.BackColor = System.Drawing.Color.Gray;
+            this.btnBets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBets.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBets.Location = new System.Drawing.Point(57, 192);
+            this.btnBets.Name = "btnBets";
+            this.btnBets.Size = new System.Drawing.Size(111, 45);
+            this.btnBets.TabIndex = 18;
+            this.btnBets.Text = "Bets";
+            this.btnBets.UseVisualStyleBackColor = false;
+            this.btnBets.Click += new System.EventHandler(this.BtnBets_Click);
+            // 
+            // btnRace
+            // 
+            this.btnRace.BackColor = System.Drawing.Color.Gray;
+            this.btnRace.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRace.Location = new System.Drawing.Point(588, 192);
+            this.btnRace.Name = "btnRace";
+            this.btnRace.Size = new System.Drawing.Size(110, 41);
+            this.btnRace.TabIndex = 19;
+            this.btnRace.Text = "Race";
+            this.btnRace.UseVisualStyleBackColor = false;
+            this.btnRace.Click += new System.EventHandler(this.BtnRace_Click_1);
             // 
             // frmBetting
             // 
@@ -435,9 +391,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblGuyName;
         private System.Windows.Forms.Label label3;
-        private CloudToolkitN6.Windows.Vista.CloudStartMenuButton btnBets;
         private System.Windows.Forms.NumericUpDown numDogNo;
-        private CloudToolkitN6.Windows.Vista.CloudStartMenuButton btnRace;
         private System.Windows.Forms.Label lblGuy3;
         private System.Windows.Forms.Label lblGuy2;
         private System.Windows.Forms.Label lblGuy1;
@@ -446,6 +400,8 @@
         private System.Windows.Forms.PictureBox pbDog4;
         private System.Windows.Forms.PictureBox pbDog3;
         private System.Windows.Forms.PictureBox pbDog2;
+        private System.Windows.Forms.Button btnBets;
+        private System.Windows.Forms.Button btnRace;
     }
 }
 

@@ -192,17 +192,7 @@ namespace RaceProject
 
         private void btnBets_Click(object sender, EventArgs e)
         {
-            try
-            {
-                BetsButtonWorking();
-
-                if (this._enableRaceBtn)
-                    btnRace.Enabled = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            
         }
 
         public bool IsExceedBetLimit(int amount)
@@ -256,10 +246,17 @@ namespace RaceProject
 
         private void btnRace_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void BtnBets_Click(object sender, EventArgs e)
+        {
             try
-                // racebutton working //
             {
-                RaceButtonWorking();                
+                BetsButtonWorking();
+
+                if (this._enableRaceBtn)
+                    btnRace.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -267,19 +264,17 @@ namespace RaceProject
             }
         }
 
-        private void PbDog3_Click(object sender, EventArgs e)
+        private void BtnRace_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void NumBucks_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PBoxRaceTrack_Click(object sender, EventArgs e)
-        {
-
+            try
+            // racebutton working //
+            {
+                RaceButtonWorking();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
