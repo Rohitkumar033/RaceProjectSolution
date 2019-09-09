@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBetting));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnRace = new System.Windows.Forms.Button();
+            this.btnBets = new System.Windows.Forms.Button();
             this.lblGuy3 = new System.Windows.Forms.Label();
             this.lblGuy2 = new System.Windows.Forms.Label();
             this.lblGuy1 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.pbDog4 = new System.Windows.Forms.PictureBox();
             this.pbDog3 = new System.Windows.Forms.PictureBox();
             this.pbDog2 = new System.Windows.Forms.PictureBox();
-            this.btnBets = new System.Windows.Forms.Button();
-            this.btnRace = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDogNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBucks)).BeginInit();
@@ -87,6 +87,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting Parlor";
             // 
+            // btnRace
+            // 
+            this.btnRace.BackColor = System.Drawing.Color.Gray;
+            this.btnRace.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRace.Location = new System.Drawing.Point(588, 192);
+            this.btnRace.Name = "btnRace";
+            this.btnRace.Size = new System.Drawing.Size(110, 41);
+            this.btnRace.TabIndex = 19;
+            this.btnRace.Text = "Race";
+            this.btnRace.UseVisualStyleBackColor = false;
+            this.btnRace.Click += new System.EventHandler(this.BtnRace_Click_1);
+            // 
+            // btnBets
+            // 
+            this.btnBets.BackColor = System.Drawing.Color.Gray;
+            this.btnBets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBets.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBets.Location = new System.Drawing.Point(57, 192);
+            this.btnBets.Name = "btnBets";
+            this.btnBets.Size = new System.Drawing.Size(111, 45);
+            this.btnBets.TabIndex = 18;
+            this.btnBets.Text = "Bets";
+            this.btnBets.UseVisualStyleBackColor = false;
+            this.btnBets.Click += new System.EventHandler(this.BtnBets_Click);
+            // 
             // lblGuy3
             // 
             this.lblGuy3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -119,6 +144,7 @@
             this.lblGuy1.Size = new System.Drawing.Size(311, 30);
             this.lblGuy1.TabIndex = 15;
             this.lblGuy1.Text = "Minimum Bet Length";
+            this.lblGuy1.Click += new System.EventHandler(this.LblGuy1_Click);
             // 
             // numDogNo
             // 
@@ -321,31 +347,6 @@
             this.pbDog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDog2.TabIndex = 19;
             this.pbDog2.TabStop = false;
-            // 
-            // btnBets
-            // 
-            this.btnBets.BackColor = System.Drawing.Color.Gray;
-            this.btnBets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBets.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBets.Location = new System.Drawing.Point(57, 192);
-            this.btnBets.Name = "btnBets";
-            this.btnBets.Size = new System.Drawing.Size(111, 45);
-            this.btnBets.TabIndex = 18;
-            this.btnBets.Text = "Bets";
-            this.btnBets.UseVisualStyleBackColor = false;
-            this.btnBets.Click += new System.EventHandler(this.BtnBets_Click);
-            // 
-            // btnRace
-            // 
-            this.btnRace.BackColor = System.Drawing.Color.Gray;
-            this.btnRace.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRace.Location = new System.Drawing.Point(588, 192);
-            this.btnRace.Name = "btnRace";
-            this.btnRace.Size = new System.Drawing.Size(110, 41);
-            this.btnRace.TabIndex = 19;
-            this.btnRace.Text = "Race";
-            this.btnRace.UseVisualStyleBackColor = false;
-            this.btnRace.Click += new System.EventHandler(this.BtnRace_Click_1);
             // 
             // frmBetting
             // 

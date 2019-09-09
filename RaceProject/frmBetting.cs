@@ -171,7 +171,7 @@ namespace RaceProject
 
             if (IsExceedBetLimit(bucksNumber))
             {
-                MessageBox.Show("You can't put Dollar greater than 45 on dog.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("You can't put Dollar greater than available amount on dog.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             _enableRaceBtn = true; // if at least one bet is placed enable race button then
@@ -190,14 +190,11 @@ namespace RaceProject
             }            
         }
 
-        private void btnBets_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         public bool IsExceedBetLimit(int amount)
         {
-            if (amount > 45)
+            if (amount > 100)
                 return true;
 
             return false;
@@ -275,6 +272,11 @@ namespace RaceProject
             {
                 MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void LblGuy1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
